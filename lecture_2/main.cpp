@@ -1,11 +1,17 @@
 #include <iostream>
-#include <string>
+// #include <string>
+#include <vector>
 using namespace std;
 
 int main()
 {
   // cout << 4 + 1 << endl;
   cout << "hello world" << endl;
+
+  vector<int> nums = {1,2,3,4,5};
+  for(int val : nums) {
+    cout << val << endl;
+  }
 
   // int
   // double
@@ -141,6 +147,11 @@ int main()
     /*int a = 2;*/
     /*cout << (a << 1);*/
 
-  cout << (3 ^ 4)  << endl;
+  // cout << (3 ^ 4)  << endl;
+
+
+  // int i = 1;
+  // while
+
   return 0;
 }
