@@ -13,8 +13,25 @@ float *passByRef(float *b) {
   cout << "b = 394 = " << *b << endl;
   return b;
 }
-int main() {
 
+void prac1(int x, int y) {
+  int *ptr1 = &x, *ptr2 = &y;
+  ptr2 = ptr1;
+
+  cout << "ptr2 " << ptr2 << endl;
+}
+void prac2() {
+  float *a, b;
+
+  int *ptr = 0;
+  int *ptr2 = NULL;
+  cout << "ptr " << ptr << endl;
+  cout << "ptr2 " << ptr2 << endl;
+  // cout << &a << endl;
+  // cout << b << endl;
+}
+
+int main() {
   cout << "Pointer" << endl;
   int a = 10;
   float b = 10.3;
@@ -46,5 +63,8 @@ int main() {
 
   cout << *passByRef(&b) << endl; // pass by ref
   cout << "b is: = " << b << endl;
+
+  // prac
+  prac1(4, 5);
   return 0;
 }
