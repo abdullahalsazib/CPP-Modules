@@ -7,6 +7,11 @@ void printArr(int arr[], int n) {
   for (int i = 0; i < n; i++)
     cout << arr[i] << " ";
 }
+void printChar(char arr[], int n) {
+  for (int i = 0; i < n; i++)
+    cout << arr[i] << " " << endl;
+}
+
 void countingSortAlgo(int arr[], int n) {
   int freq[10000] = {0};
   int minVal = INT_MAX, maxVal = INT_MIN;
