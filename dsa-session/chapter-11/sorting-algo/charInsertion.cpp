@@ -17,10 +17,9 @@ void charInsertion(char arr[], int n) {
     int prev = i - 1;
     while (prev >= 0 && arr[prev] < curr) {
       swap(arr[prev], arr[prev + 1]);
-      // prev = prev - 1;
       prev--;
     }
-    arr[prev + 1] = curr; // pore rakha hole arr[prev + 1 ] = faka value
+    arr[prev + 1] = curr;
   }
   printArr(arr, n);
 }
